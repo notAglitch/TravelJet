@@ -1,0 +1,25 @@
+.Bookfrm{
+    border: 1px solid rgb(1, 80, 1);
+    width: fit-content;
+    padding: 10px;
+}
+
+.Bookout{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.send{
+    background-color: #8860d0;
+	color: #c1c8e4;
+	margin: 0;
+	cursor: pointer;
+	border: none;
+	width: 125px;
+	height: 40px;
+}
+
+.title1{
+    font-weight: bold;
+}

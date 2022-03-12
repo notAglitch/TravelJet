@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!--Link to css-->
+	<link rel="stylesheet" type="text/css" href="styles/TopDestination.css">
+	
+	<link rel="stylesheet" href="styles/search.css">
+
+	<script type="text/javascript" src="js/TopDestination.js"></script>
+    <meta charset="utf-8">
+	
+    <meta name="viewport" content="width=device-width">
+	
+	<!--title of the page-->
+    <title>About</title>
+	
+	<!--Style for slider-->
+	<style type="text/css">
+		#slider
+			{
+			overflow:hidden;
+			}
+		#slider figure
+			{
+			position:relative;
+			width:500%;
+			margin:0;
+			left:0;
+			animation:20s slider infinite;
+			}
+		#slider figure img
+			{
+			width:20%;
+			float:left;
+			}
+		@keyframes slider
+			{
+			0%{
+				left:0;
+				}
+			20%{
+				left:0;
+				}
+			25%{
+				left:-100%
+				}
+			45%{
+				left:-100%
+				}
+			50%{
+				left:-200%
+				}
+			75%{
+				left:-200%
+				}
+			75%{
+				left:-300%
+				}
+			95%{
+				left:-300%
+				}
+			100%{
+				left:-400%
+				}
+			}	
+	</style>
+	
+  </head>
+  
+  
+  <body>
+	
+	<header>
+		<div class="first">
+		<hr id="test"/>
+		
+		<a href="index.html"><img class="logo" src="images/logo.jpg" height="100" width="380" alt="logo"></a>
+		
+		<a href="login.html"><button class="login" style="width:100px;">Login</button></a>
+		
+		<a href="register.html"><button class="Register" style="width:100px;">Register</button></a>
+		
+		<hr id="test"/>
+	
+		<ul class="menu">
+			<li class="menu"><a href="index.html">Home</a></li>
+			<li class="menu"><a href="flightlist.php">Flight Schedule</a></li>
+			<li class="menu"><a href="BookFlight.html">Book Flight</a></li>
+			<li class="menu active"><a href="TopDestination.html">Top Destination</a></li>
+			<li class="menu"><a href="specialoffers.html">Special Offers</a></li>
+			<li class="menu"><a href="ContactUs.html">Contact Us</a></li>
+			<li class="menu"><a href="AboutUs.html">About Us</a></li>
+			<div class="topnav">
+				<form method="post" action="PHP/search.php">
+					<input type="text" name="txtsearch" placeholder="Search">
+					<input type="submit" name="btnsearch" value="Search" class="menu">
+				</form>
+			</div>
+		</ul>
+	
+		<hr id="test"/>
+	
+		<div id="slider">
+			<figure>
+				<img src="images/S1.png">
+				<img src="images/S2.png">
+				<img src="images/S3.png">
+				<img src="images/S4.png">
+				<img src="images/S5.png">
+			</figure>
+		</div>
+
+		<hr id="test"/>
+    </div>
+	</header>
+	
+    <br/>
+	
+	<br><br>
+	<h2>OUR MOST POPULAR DESTINNATIONS</h2>
+<div id="myBtnContainer">
+  <button class="btn active"  onclick="filterSelection('all') "> All countries</button>
+  <button class="btn" onclick="filterSelection('Asia')"> Asia</button>
+  <button class="btn" onclick="filterSelection('Europe')"> Europe</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column Asia">
+    <div class="content">
+      <img src="images/india.jpg" alt="india" style="width:100%">
+      <h4>INDIA</h4>
+    </div>
+  </div>
+  <div class="column Asia">
+    <div class="content">
+      <img src="images/japan.jpg" alt="japan" style="width:100%">
+      <h4>JAPAN</h4>
+    </div>
+  </div>
+  <div class="column Asia">
+    <div class="content">
+      <img src="images/china.jpg" alt="china" style="width:100%">
+        <h4>CHAINA</h4>
+    </div>
+  </div>
+
+  <div class="column Asia">
+    <div class="content">
+      <img src="images/taiwan.jpg" alt="taiwan" style="width:100%">
+      <h4>TAIWAN</h4>
+    </div>
+  </div>
+  <div class="column Europe">
+    <div class="content">
+      <img src="images/swedenEU.jpg" alt="sweden" style="width:100%">
+      <h4>SWEDEN</h4>
+    </div>
+  </div>
+  <div class="column Europe">
+    <div class="content">
+      <img src="images/italy europe.jpg" alt="italy" style="width:100%">
+      <h4>ITALY</h4>
+    </div>
+  </div>
+
+  <div class="column Europe">
+    <div class="content">
+      <img src="images/denmarkEU.jpg" alt="denmark" style="width:100%">
+      <h4>DENMARK</h4>
+    </div>
+  </div>
+  <div class="column Europe">
+    <div class="content">
+      <img src="images/russia.jpg" alt="russia" style="width:100%">
+      <h4>RUSSIA</h4>
+    </div>
+  </div>
+    <div class="column Asia">
+    <div class="content">
+      <img src="images/malaysiaA.jpg" alt="malaysia" style="width:100%">
+      <h4>MALAYSIA</h4>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+	
+	<footer>
+			<p><a href="index.html">Home</a>  |  <a href="ContactUs.html">Contact Us</a>  |  <a href="AboutJourney.html">About Journey</a><p>
+			<p>TravelJet Airlines </p>
+			<p><i>No99,Park Road,Colombo-07,Sri Lanka</i></p>
+			<p><i>Tel:0112123456/0771234567</i></p>
+			<small>&#169;traveljet.com All Rights Reserved</small>
+			<img class="visa" src="images/visa-logo.png" height="50" width="50" alt="visa">
+			<img class="mastercard" src="images/mastercard.png" height="50" width="50" alt="mastercard">
+			<a href="https://www.facebook.com/login/"><img class="facebook" src="images/facebook.png" height="40" width="40" alt="facebook"></a>
+			<a href="https://twitter.com/twitt_login?lang=en"><img class="twitter" src="images/twitter.png" height="40" width="40" alt="twitter"></a>
+			<a href="https://www.instagram.com/?hl=en"><img class="instagram" src="images/instagram.png" height="40" width="40" alt="instagram"></a>
+			<a href="https://www.youtube.com/"><img class="youtube" src="images/youtube.png" height="40" width="40" alt="youtube"></a>
+			<a href="https://play.google.com/store/movies?hl=en&tab=w8"><img class="google-play" src="images/google-play.png" height="40" width="40" alt="google-play"></a>
+			<a href="https://www.apple.com/app-store/"><img class="app-store" src="images/app-store.png" height="40" width="40" alt="app-store"></a>
+			<img class="qr-code" src="images/qr-code.png" height="100" width="100" alt="qr-code">
+    </footer>
+  </body>
+</html>

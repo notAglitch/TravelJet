@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Add User
+    </title>
+</head>
+<body>
+
+    <form action="PHP/adduser.php"  method="POST"  onsubmit="signUpUser();" enctype="multipart/form-data">
+	
+
+        <label id="lUname">Username : </label> <br>
+        <input type="text" size="100" name="Uname" placeholder="Ex: dahamthameera"/><br>
+
+
+        <label id="lFname">Full name : </label><br>
+        <input type="text" size="100" name="Fname" placeholder="Ex: P.A.Daham Thameera"/><br>
+        
+        <label id="memail">Email Address : </lable><br>
+        <input type="text" size="100" name="Email"  placeholder="Ex: dahamthameera@email.com"/><br>
+
+        <label id="lGender">Gender : </label><br>
+        <input type="radio" name="gender" value="male"/><label>Male</label>
+        <input type="radio" name="gender" value="female"/><lable>female</lable><br><br>
+
+        <label>Telephone : </label> <br>
+        <input type="text" size=10 name="Telephone"/><br>
+
+        <label>Date of Birth : </label> <br>
+        <input type="date" id="dateOfB" name="dateofbir"/><br><br>
+    
+    
+
+        <label id="lPass">Password</labale><br>
+        <input type="password" size="100" name="pass"/><br>
+        
+        
+        <label id="lcPass">Confirm Password</labale><br>
+        <input type="password" size="100" />
+        <br>
+    
+        <input type="checkbox" name="validation" value="confrom" name="agrees"/><label>I agree to your <a href="iterms_and_conditions.html" style="color: #009933;">teams of service</a> </label><br>
+        
+    
+        <input type="submit" value="Submit" name="btnSubmit" class="send"/> 
+        <input type="reset" value="Reset" name="Reset" class="send"/>  
+        <a href="index.html" style="padding: 2px;"><button class="send" style="width:100px;">Cancel</button></a>
+</form>
+
+</body>
+</html>

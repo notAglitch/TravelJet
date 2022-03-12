@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+  
+
+
+
+<!Link to css>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+  <link rel="stylesheet" href="styles/search.css">
+
+  <link href="foodCss/css/style.css" rel="stylesheet">
+
+    
+   <meta charset="utf-8">
+	
+    <meta name="viewport" content="width=device-width">
+	
+
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 34px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<header>
+		<div class="first">
+		<hr id="test"/>
+		
+		<a href="index.html"><img class="logo" src="images/logo.jpg" height="100" width="380" alt="logo"></a>
+		
+		<a href="login.html"><button class="login" style="width:100px;">Login</button></a>
+		
+		<a href="register.html"><button class="Register" style="width:100px;">Register</button></a>
+		
+		<hr id="test"/>
+	
+		<ul class="menu">
+			<li class="menu"><a href="index.html">Home</a></li>
+			<li class="menu"><a href="flightlist.php">Flight Schedule</a></li>
+			<li class="menu active"><a href="BookFlight.html">Book Flight</a></li>
+			<li class="menu"><a href="TopDestination.html">Top Destination</a></li>
+			<li class="menu"><a href="specialoffers.html">Special Offers</a></li>
+			<li class="menu"><a href="ContactUs.html">Contact Us</a></li>
+			<li class="menu"><a href="AboutUs.html">About Us</a></li>
+			<div class="topnav">
+				<form method="post" action="PHP/search.php">
+					<input type="text" name="txtsearch" placeholder="Search">
+					<input type="submit" name="btnsearch" value="Search" class="menu">
+				</form>
+			</div>
+		</ul>
+	
+		<hr id="test"/>
+	
+    </div>
+	</header>
+	
+	  <br/>
+	
+	<br><br>
+
+  <h1 class="h1-topic" style="text-align: center;">Food Types</h1>
+
+<br>
+
+<div class="row">
+  
+  <div class="column">
+    <div class="card" >
+
+      <img src="images/food/italianfood.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Italian Food</h2>
+ 
+        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+        
+        <p> 
+          <a href="italian_food.html">
+            <button class="button">Select</button>
+        </a>
+      </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" >
+
+      <img src="images/food/srilankanfood.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Sri Lankan Food</h2>
+       
+        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+       
+        <p> 
+        <a href="srilankan_food.html">
+          <button class="button">Select</button>
+      </a>
+    </p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" >
+
+      <img src="images/food/chinesefood.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Chinese Food</h2>
+        
+        <!-- <p>Some text that describes me lorem ipsum ipsum lorem.</p> -->
+    
+        <p> 
+          <a href="chinese_food.html">
+            <button class="button">Select</button>
+        </a>
+      </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- <h1 class="h1-topic">Special Cakes</h1>
+
+<p style="text-align: justify; margin-right: 85px"><img src="images/ab.jpg" alt="Pineapple" style="width:300px;height:300px;margin-right:30px; margin-left: 100px;">
+</p> -->
+
+<footer>
+			<p><a href="index.html">Home</a>  |  <a href="ContactUs.html">Contact Us</a>  |  <a href="AboutJourney.html">About Journey</a><p>
+			<p>TravelJet Airlines </p>
+			<p><i>No99,Park Road,Colombo-07,Sri Lanka</i></p>
+			<p><i>Tel:0112123456/0771234567</i></p>
+			<small>&#169;traveljet.com All Rights Reserved</small>
+			<img class="visa" src="images/visa-logo.png" height="50" width="50" alt="visa">
+			<img class="mastercard" src="images/mastercard.png" height="50" width="50" alt="mastercard">
+			<a href="https://www.facebook.com/login/"><img class="facebook" src="images/facebook.png" height="40" width="40" alt="facebook"></a>
+			<a href="https://twitter.com/twitt_login?lang=en"><img class="twitter" src="images/twitter.png" height="40" width="40" alt="twitter"></a>
+			<a href="https://www.instagram.com/?hl=en"><img class="instagram" src="images/instagram.png" height="40" width="40" alt="instagram"></a>
+			<a href="https://www.youtube.com/"><img class="youtube" src="images/youtube.png" height="40" width="40" alt="youtube"></a>
+			<a href="https://play.google.com/store/movies?hl=en&tab=w8"><img class="google-play" src="images/google-play.png" height="40" width="40" alt="google-play"></a>
+			<a href="https://www.apple.com/app-store/"><img class="app-store" src="images/app-store.png" height="40" width="40" alt="app-store"></a>
+			<img class="qr-code" src="images/qr-code.png" height="100" width="100" alt="qr-code">
+    </footer>
+
+
+</body>
+</html>
+
+
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!--Link to css-->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+    <link rel="stylesheet" type="text/css" href="styles/specialoffers.css">
+	
+    <link rel="stylesheet" href="styles/sliderstyle.css">
+    
+    <link rel="stylesheet" href="styles/search.css">
+
+    <meta charset="utf-8">
+	
+    <meta name="viewport" content="width=device-width">
+	
+	<!--title of the page-->
+    <title>Special Offers |TravelJet Airlines</title>
+	<script src="js/offers.js"></script>
+	
+  </head>
+  
+  
+  <body>
+	
+	<header>
+		<div class="first">
+		<hr id="test"/>
+		
+		<a href="index.html"><img class="logo" src="images/logo.jpg" height="100" width="380" alt="logo"></a>
+		
+		<a href="login.html"><button class="login" style="width:100px;">Login</button></a>
+		
+		<a href="register.html"><button class="Register" style="width:100px;">Register</button></a>
+		
+		<hr id="test"/>
+	
+        <ul class="menu">
+			<li class="menu active"><a href="index.html">Home</a></li>
+			<li class="menu"><a href="flightlist.php">Flight Schedule</a></li>
+			<li class="menu"><a href="BookFlight.html">Book Flight</a></li>
+			<li class="menu"><a href="TopDestination.html">Top Destination</a></li>
+			<li class="menu"><a href="specialoffers.html">Special Offers</a></li>
+			<li class="menu"><a href="ContactUs.html">Contact Us</a></li>
+			<li class="menu"><a href="AboutUs.html">About Us</a></li>
+			<div class="topnav">
+				<form method="post" action="PHP/search.php">
+					<input type="text" name="txtsearch" placeholder="Search">
+					<input type="submit" name="btnsearch" value="Search" class="menu">
+				</form>
+			</div>
+		</ul>
+	
+		<hr id="test"/>
+
+		
+    </div>
+	</header>
+<br>
+	<!--start of content-->
+	<center>
+	        <!--image slider start-->
+        <div class="slider" align="center">
+            <div class="slides">
+                <!--radio buttons-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+
+                <!--slide image start-->
+                <div class="slide first">
+                    <img src="images/flight1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/flight2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/flight3.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/flight4.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/flight5.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/flight6.jpg" alt="">
+                </div>
+                <!--slide images end-->
+                
+                <!--automatic navigation start-->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div> 
+                </div>
+                <!--automatic navigation end-->
+                
+                <!--manual navigation start-->
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                </div>
+                <!--manual navigation end-->
+
+                <script src="js/imageslider.js"></script>
+            </div>
+        </div>
+        <!--image slider end-->
+
+    <br/>
+    
+            <button onclick="m1()">All Offers</button>
+            <button onclick="m2()">50% off discount</button>
+            <button onclick="m3()">30% off discount</button>
+            <button onclick="m4()">20% off discount</button>
+            <button onclick="m5()">10% off discount</button><br><br>
+        <a href="bookflight.html"><img id="i1" src="images/off1.jpg" class="offer" style="clear: both;"><br></a>
+        <a href="bookflight.html"><img id="i2" src="images/off2.jpg" class="offer" ><br></a>
+        <a href="bookflight.html"><img id="i3" src="images/off3.jpg" class="offer"><br></a>
+        <a href="bookflight.html"><img id="i4" src="images/off4.jpg" class="offer"><br></a>
+        <a href="bookflight.html"><img id="i5" src="images/off5.jpg" class="offer"><br></a>
+        <a href="bookflight.html"><img id="i6" src="images/off6.jpg" class="offer"><br></a>
+        <a href="bookflight.html"><img id="i7" src="images/off7.jpg" class="offer"><br></a>
+        <a href="bookflight.html"><img id="i8" src="images/off8.jpg" class="offer"><br></a>
+        <a href="bookflight.html"><img id="i9" src="images/off9.jpg" class="offer"><br></a>
+        <a href="bookflight.html"><img id="i10" src="images/off10.jpg" class="offer"><br></a>
+	<br><br>
+	
+	
+
+
+	<!--end of content-->
+	<footer>
+			<p><a href="index.html">Home</a>  |  <a href="ContactUs.html">Contact Us</a>  |  <a href="AboutJourney.html">About Journey</a><p>
+			<p>TravelJet Airlines </p>
+			<p><i>No99,Park Road,Colombo-07,Sri Lanka</i></p>
+			<p><i>Tel:0112123456/0771234567</i></p>
+			<small>&#169;traveljet.com All Rights Reserved</small>
+			<img class="visa" src="images/visa-logo.png" height="50" width="50" alt="visa">
+			<img class="mastercard" src="images/mastercard.png" height="50" width="50" alt="mastercard">
+			<a href="https://www.facebook.com/login/"><img class="facebook" src="images/facebook.png" height="40" width="40" alt="facebook"></a>
+			<a href="https://twitter.com/twitt_login?lang=en"><img class="twitter" src="images/twitter.png" height="40" width="40" alt="twitter"></a>
+			<a href="https://www.instagram.com/?hl=en"><img class="instagram" src="images/instagram.png" height="40" width="40" alt="instagram"></a>
+			<a href="https://www.youtube.com/"><img class="youtube" src="images/youtube.png" height="40" width="40" alt="youtube"></a>
+			<a href="https://play.google.com/store/movies?hl=en&tab=w8"><img class="google-play" src="images/google-play.png" height="40" width="40" alt="google-play"></a>
+			<a href="https://www.apple.com/app-store/"><img class="app-store" src="images/app-store.png" height="40" width="40" alt="app-store"></a>
+			<img class="qr-code" src="images/qr-code.png" height="100" width="100" alt="qr-code">
+    </footer>
+  </body>
+</html>

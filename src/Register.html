@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<!--Link to css-->
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<link rel="stylesheet" type="text/css" href="styles/Register.css">
+    <meta charset="utf-8">
+	
+    <meta name="viewport" content="width=device-width">
+	
+	<script src="js/Register.js"></script>
+	
+	<!--title of the page-->
+    <title>Register</title>
+	
+	
+	
+  </head>
+  
+  
+  <body>
+	
+	<header>
+		<div class="first">
+		<hr id="test"/>
+		
+		<a href="index.html"><img class="logo" src="images/logo.jpg" height="100" width="380" alt="logo"></a>
+		
+		<a href="login.html"><button class="login" style="width:100px;">Login</button></a>
+		
+		
+		<hr id="test"/>
+	
+		
+			<ul class="menu">
+				<li class="menu"><a href="index.html">Home</a></li>
+				<li class="menu"><a href="FlightSchedule.html">Flight Schedule</a></li>
+				<li class="menu"><a href="BookFlight.html">Book Flight</a></li>
+				<li class="menu"><a href="TopDestination.html">Top Destination</a></li>
+				<li class="menu"><a href="SpecialOffers.html">Special Offers</a></li>
+				<li class="menu"><a href="ContactUs.html">Contact Us</a></li>
+				<li class="menu"><a href="AboutUs.html">About Us</a></li>
+			</ul>
+		
+	
+		<hr id="test"/>
+    </div>
+	</header>
+	
+	<br/>
+	<div class="regout">
+		<div class="regfrm">
+			<div class="Register-title">
+				<h1 style="color: #009933;">Create a New Account</h1>
+				<p style="line-height: 0px; text-align: left;">Already have one? Sign in <a href="login.html" style="color: #009933;"><u>Here</u></a></p>
+			</div>
+			<form action="PHP/register.php"  method="POST" name="RegForm" onsubmit="signUpUser();" enctype="multipart/form-data">
+
+							
+						<img src="images/profile-picture.png" id="selectedImage"><br>
+						<input type="file" name="filename"/>
+						<br><br>	
+			
+						<label id="lUname">Username : </label> <br>
+						<input type="text" size="100" name="Uname" placeholder="Ex: dahamthameera"/><br>
+				
+				
+						<label id="lFname">Full name : </label><br>
+						<input type="text" size="100" name="Fname" placeholder="Ex: P.A.Daham Thameera"/><br>
+						
+						<label id="memail">Email Address : </lable><br>
+						<input type="text" size="100" name="Email"  placeholder="Ex: dahamthameera@email.com"/><br>
+				
+						<label id="lGender">Gender : </label><br>
+						<input type="radio" name="gender" value="male"/><label>Male</label>
+						<input type="radio" name="gender" value="female"/><lable>female</lable><br><br>
+
+						<label>Telephone : </label> <br>
+						<input type="text" size=10 name="Telephone"/><br>
+
+						<label>Date of Birth : </label> <br>
+						<input type="date" id="dateOfB" name="dateofbir"/><br><br>
+					
+					
+
+						<label id="lPass">Password</labale><br>
+						<input type="password" size="100" name="pass"/><br>
+						
+						
+						<label id="lcPass">Confirm Password</labale><br>
+						<input type="password" size="100" />
+						<br>
+					
+						<input type="checkbox" name="validation" value="confrom" name="agrees"/><label>I agree to your <a href="iterms_and_conditions.html" style="color: #009933;">teams of service</a> </label><br>
+						
+					
+						<input type="submit" value="Submit" name="btnSubmit" class="send"/> 
+						<input type="reset" value="Reset" name="Reset" class="send"/>  
+						<a href="index.html" style="padding: 2px;"><button class="send" style="width:100px;">Cancel</button></a>
+				</form>
+		</div>
+	</div>
+	<br><br>
+
+	
+	<footer>
+			<p><a href="index.html">Home</a>  |  <a href="ContactUs.html">Contact Us</a>  |  <a href="AboutJourney.html">About Journey</a><p>
+			<p>TravelJet Airlines </p>
+			<p><i>No99,Park Road,Colombo-07,Sri Lanka</i></p>
+			<p><i>Tel:0112123456/0771234567</i></p>
+			<small>&#169;traveljet.com All Rights Reserved</small>
+			<img class="visa" src="images/visa-logo.png" height="50" width="50" alt="visa">
+			<img class="mastercard" src="images/mastercard.png" height="50" width="50" alt="mastercard">
+			<a href="https://www.facebook.com/login/"><img class="facebook" src="images/facebook.png" height="40" width="40" alt="facebook"></a>
+			<a href="https://twitter.com/twitt_login?lang=en"><img class="twitter" src="images/twitter.png" height="40" width="40" alt="twitter"></a>
+			<a href="https://www.instagram.com/?hl=en"><img class="instagram" src="images/instagram.png" height="40" width="40" alt="instagram"></a>
+			<a href="https://www.youtube.com/"><img class="youtube" src="images/youtube.png" height="40" width="40" alt="youtube"></a>
+			<a href="https://play.google.com/store/movies?hl=en&tab=w8"><img class="google-play" src="images/google-play.png" height="40" width="40" alt="google-play"></a>
+			<a href="https://www.apple.com/app-store/"><img class="app-store" src="images/app-store.png" height="40" width="40" alt="app-store"></a>
+			<img class="qr-code" src="images/qr-code.png" height="100" width="100" alt="qr-code">
+    </footer>
+  </body>
+</html>

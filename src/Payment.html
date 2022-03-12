@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Link to css-->
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		
+		<link rel="stylesheet" type="text/css" href="styles/Payment.css">
+	
+    	<meta charset="utf-8">
+
+    	<meta name="viewport" content="width=device-width">
+	
+		<!--title of the page-->
+		<title>Payment</title>
+	
+	</head>
+  
+  
+  <body>
+	
+	<header>
+		<div class="first">
+			<hr id="test"/>
+			
+			<a href="index.html"><img class="logo" src="images/logo.jpg" height="100" width="380" alt="logo"></a>
+			
+			
+		
+		<hr id="test"/>
+		
+    	</div>
+	</header>
+	<br/> 
+	<br/>
+	<ul class="menu">
+		<li class="menu"><a href="BookFlight.html">Book</a></li>
+		<li class="menu"><a href="FilghtSearch.html">Flight</a></li>
+		<li class="menu active"><a href="Payment.html">Payment</a></li>
+	</ul>
+
+	<br><br>
+
+	<div class="Bookout">
+		<div class="Bookfrm">
+			<form  method="POST" name="bookForm" onsubmit="bookFormUser();" enctype="multipart/form-data">
+						<div class="title1">Add Payment Details</div>
+
+						<label id="CardType">Card Type : </label><br>
+							<input type="radio" name="Type" value="Visa"/><label><img src="images/visa.png" height="20" width="38" alt="visa">Visa</label>
+							<input type="radio" name="Type" value="Mastercard"/><lable><img src="images/master.png" height="20" width="38" alt="mastercard">Mastercard</lable></br></br>	
+						
+						<label id="lFrom">Card Number : </label> 
+							<input type="text" size="40" name="From" placeholder="Card Number"/></br></br>
+
+						<label id="lFrom">CVN : </label> 
+							<input type="text" size="4" name="From" placeholder="CVN"/></br></br>
+
+						<label>Expiration Date : </label> 
+							<input type="month" id="dat" name="Depart"/></br></br>
+
+						<input type="checkbox" name="validation" value="confrom" name="agrees"/><label>I agree to your <a href="index.html" style="color: #009933;">teams of service</a> </label><br><br>	
+						
+						<a href="BookFlight.html" style="padding: 2px;"><button class="send" style="width:100px;">Cancel</button></a>
+
+						<input type="submit" value="Pay" name="btnSubmit" class="send"/> 
+					
+			</form>
+		</div>
+	</div>
+</br></br></br></br>
+	
+	<footer>
+			<p><a href="index.html">Home</a>  |  <a href="ContactUs.html">Contact Us</a>  |  <a href="AboutJourney.html">About Journey</a><p>
+			<p>TravelJet Airlines </p>
+			<p><i>No99,Park Road,Colombo-07,Sri Lanka</i></p>
+			<p><i>Tel:0112123456/0771234567</i></p>
+			<small>&#169;traveljet.com All Rights Reserved</small>
+			<img class="visa" src="images/visa-logo.png" height="50" width="50" alt="visa">
+			<img class="mastercard" src="images/mastercard.png" height="50" width="50" alt="mastercard">
+			<a href="https://www.facebook.com/login/"><img class="facebook" src="images/facebook.png" height="40" width="40" alt="facebook"></a>
+			<a href="https://twitter.com/twitt_login?lang=en"><img class="twitter" src="images/twitter.png" height="40" width="40" alt="twitter"></a>
+			<a href="https://www.instagram.com/?hl=en"><img class="instagram" src="images/instagram.png" height="40" width="40" alt="instagram"></a>
+			<a href="https://www.youtube.com/"><img class="youtube" src="images/youtube.png" height="40" width="40" alt="youtube"></a>
+			<a href="https://play.google.com/store/movies?hl=en&tab=w8"><img class="google-play" src="images/google-play.png" height="40" width="40" alt="google-play"></a>
+			<a href="https://www.apple.com/app-store/"><img class="app-store" src="images/app-store.png" height="40" width="40" alt="app-store"></a>
+			<img class="qr-code" src="images/qr-code.png" height="100" width="100" alt="qr-code">
+    </footer>
+  </body>
+</html>

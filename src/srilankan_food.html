@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+  
+
+
+
+<!Link to css>
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+
+  <link rel="stylesheet" href="styles/search.css">
+
+  <link href="foodCss/css/style.css" rel="stylesheet">
+
+    
+   <meta charset="utf-8">
+	
+    <meta name="viewport" content="width=device-width">
+	
+
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 30.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  margin-left: 34px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body>
+
+<header>
+		<div class="first">
+		<hr id="test"/>
+		
+		<a href="index.html"><img class="logo" src="images/logo.jpg" height="100" width="380" alt="logo"></a>
+		
+    <a href="login.html"><button class="login" style="width:100px;">Login</button></a>
+		
+		<a href="register.html"><button class="Register" style="width:100px;">Register</button></a>
+		
+		<hr id="test"/>
+	
+		<ul class="menu">
+			<li class="menu"><a href="index.html">Home</a></li>
+			<li class="menu"><a href="flightlist.php">Flight Schedule</a></li>
+			<li class="menu active"><a href="BookFlight.html">Book Flight</a></li>
+			<li class="menu"><a href="TopDestination.html">Top Destination</a></li>
+			<li class="menu"><a href="specialoffers.html">Special Offers</a></li>
+			<li class="menu"><a href="ContactUs.html">Contact Us</a></li>
+			<li class="menu"><a href="AboutUs.html">About Us</a></li>
+			<div class="topnav">
+				<form method="post" action="PHP/search.php">
+					<input type="text" name="txtsearch" placeholder="Search">
+					<input type="submit" name="btnsearch" value="Search" class="menu">
+				</form>
+			</div>
+		</ul>
+	
+		<hr id="test"/>
+	
+	
+    </div>
+	</header>
+	
+	  <br/>
+	
+	<br><br>
+
+<h1 class="h1-topic" style="text-align: center;">Sri Lankan Food</h1>
+
+<br>
+
+<!-- Breakfast section begin -->
+
+<h2 class="h1-topic" style="text-align: center;">Breakfast</h2>
+
+<div class="row">
+
+  <div class="column">
+    <div class="card" >
+      <img src="images/food/waffles.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Waffles</h2>
+ 
+        <p>Chocolate waffles</p>
+        <p>Strawberry waffles</p>
+        <p>Cinnamon Roll waffles</p>
+        
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" >
+      <img src="images/food/hoppers.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Hoppers</h2>
+       
+        <p>Plain Hoppers</p>
+        <p>Egg Hoppers</p>
+        <p>Milk Hoppers</p>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" >
+      <img src="images/food/tea.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Tea/Milk</h2>
+        
+        <p>Ginger Tea</p>
+        <p>Tea</p>
+        <p>Nescafe</p>
+    
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Breakfast section end -->
+
+<!-- Lunch section begin -->
+<h2 class="h1-topic" style="text-align: center;">Lunch</h2>
+
+<div class="row">
+  
+  <div class="column">
+    <div class="card" >
+      <img src="images/food/riceandcurry.jpeg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Rice and Curry</h2>
+ 
+        <p>Fish Curry and Mixed Rice</p>
+        <p>Jackfruit (Plols) curry and Rice</p>
+        <p>Pennywort Salad and Rice</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" >
+      <img src="images/food/lumprice.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Lumprice</h2>
+       
+        <p>Chili Fish</p>
+        <p>Chicken and Yellow Rice</p>
+        <p>Mutton</p>
+       
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" >
+      <img src="images/food/juice.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Fresh Juices</h2>
+        
+        <p>Mango</p>
+        <p>Apple</p>
+        <p>Watermelon</p>
+  
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Lunch section end -->
+
+<!-- Dinner section begin -->
+<h2 class="h1-topic" style="text-align: center;">Dinner</h2>
+
+<div class="row">
+
+  <div class="column">
+    <div class="card" >
+      <img src="images/food/nasigoreng.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Special Rice</h2>
+ 
+        <p>Chicken Fried Rice</p>
+        <p>Seafood Fried Rice</p>
+        <p>Nasigoreng</p>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card" >
+      <img src="images/food/kottu.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Kottu</h2>
+       
+        <p>Cheese Kottu</p>
+        <p>Chickenn Kottu</p>
+        <p>Veg Kottu</p>
+       
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" >
+      <img src="images/food/beer.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Beers and Liquor</h2>
+        
+        <p>Lion Stout</p>
+        <p>Millers Sando Stout</p>
+        <p>Johnnie Walker Gold Label</Label></p>
+        
+    
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Dinner section end -->
+  
+  
+
+<footer>
+			<p><a href="index.html">Home</a>  |  <a href="ContactUs.html">Contact Us</a>  |  <a href="AboutJourney.html">About Journey</a><p>
+			<p>TravelJet Airlines </p>
+			<p><i>No99,Park Road,Colombo-07,Sri Lanka</i></p>
+			<p><i>Tel:0112123456/0771234567</i></p>
+			<small>&#169;traveljet.com All Rights Reserved</small>
+			<img class="visa" src="images/visa-logo.png" height="50" width="50" alt="visa">
+			<img class="mastercard" src="images/mastercard.png" height="50" width="50" alt="mastercard">
+			<a href="https://www.facebook.com/login/"><img class="facebook" src="images/facebook.png" height="40" width="40" alt="facebook"></a>
+			<a href="https://twitter.com/twitt_login?lang=en"><img class="twitter" src="images/twitter.png" height="40" width="40" alt="twitter"></a>
+			<a href="https://www.instagram.com/?hl=en"><img class="instagram" src="images/instagram.png" height="40" width="40" alt="instagram"></a>
+			<a href="https://www.youtube.com/"><img class="youtube" src="images/youtube.png" height="40" width="40" alt="youtube"></a>
+			<a href="https://play.google.com/store/movies?hl=en&tab=w8"><img class="google-play" src="images/google-play.png" height="40" width="40" alt="google-play"></a>
+			<a href="https://www.apple.com/app-store/"><img class="app-store" src="images/app-store.png" height="40" width="40" alt="app-store"></a>
+			<img class="qr-code" src="images/qr-code.png" height="100" width="100" alt="qr-code">
+    </footer>
+
+
+</body>
+</html>
+
+
+
+</body>
+</html>
